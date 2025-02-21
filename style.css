@@ -1,0 +1,180 @@
+.background_img {
+  background-image: url(./assets/img/burger_img_header.jpg);
+  height: 160px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.main {
+  display: flex;
+  position: relative;
+}
+
+.main_content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.header_main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.headline_rating {
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 16px;
+}
+
+.logo_background {
+  background-color: beige;
+  border: 1px black solid;
+  border-radius: 50%;
+  align-items: end;
+  position: absolute;
+  top: 115px;
+}
+
+.logo_icon {
+  width: 80px;
+  padding: 16px;
+}
+
+.nav_dishes {
+  height: 56px;
+  background-color: beige;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.dish_section {
+  height: 120px;
+  background-position: left;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.burger_section {
+  background-image: url(./assets/img/burger_section.jpg);
+}
+
+.supplyment_section {
+  background-image: url(./assets/img/supplyment_section.jpg);
+}
+
+.drinks_section {
+  background-image: url(./assets/img/drinks_section.jpg);
+}
+
+.souce_section {
+  background-image: url(./assets/img/saucen_section.jpg);
+}
+
+.supply_content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.supply_segment {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid black;
+}
+
+.supply_single {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 88%;
+}
+
+.price {
+  color: rgb(180, 118, 1);
+}
+
+.overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.459);
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.test_order_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: orange;
+  color: white;
+  height: 80px;
+  width: 480px;
+  border-radius: 16px;
+}
+
+.test_order {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.resp_basket_btn {
+  height: 40px;
+  background-color: orange;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 16px;
+  margin-bottom: 8px;
+  border: 0;
+}
+
+.resp_basket_btn:hover {
+  background-color: rgb(187, 122, 1);
+}
+
+
+body {
+  --sb-track-color: #6b4503;
+  --sb-thumb-color: #ffa500;
+  --sb-size: 8px;
+}
+
+body::-webkit-scrollbar {
+  width: var(--sb-size)
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--sb-track-color);
+  border-radius: 8px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--sb-thumb-color);
+  border-radius: 8px;
+  
+}
+
+@supports not selector(::-webkit-scrollbar) {
+  body {
+    scrollbar-color: var(--sb-thumb-color)
+                     var(--sb-track-color);
+  }
+}
+
+

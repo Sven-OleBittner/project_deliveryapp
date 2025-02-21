@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bestell-App</title>
+    <link
+      rel="shortcut icon"
+      href="./assets/icons/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./styles/basket.css" />
+    <link rel="stylesheet" href="./styles/standard.css" />
+    <link rel="stylesheet" href="./styles/header_footer.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./styles/media.css" />
+    <link rel="stylesheet" href="./assets/fonts/fonts.css" />
+  </head>
+  <body onload="init()" id="body">
+    <section onclick="orderOverlayOff()" id="overlaySection" class="d_none">
+      <div class="overlay">
+        <div class="test_order_container">
+          <span class="test_order">Die Testbestellung wurde ausgführt</span>
+        </div>
+      </div>
+    </section>
+    <section class="header">
+      <header class="header_content site_padding" id="siteHead">
+        <img
+          class="header_logo"
+          src="./assets/img/Bestell App- Logo.svg"
+          alt="Bestell_App_Logo"
+        />
+      </header>
+    </section>
+    <section class="main">
+      <main class="main_content" id="mainContent">
+        <div class="background_img">
+          <div class="logo_background">
+            <img
+              class="logo_icon"
+              src="./assets/icons/hamburger_logo.png"
+              alt="burger_logo"
+            />
+          </div>
+        </div>
+        <div class="headline_rating top_bottom_padding site_padding">
+          <h1 class="headline">Royal Burger</h1>
+          <span>Bewertung ( 4,8 von 5 Sternen )</span>
+        </div>
+        <div class="nav">
+          <div class="nav_dishes site_padding">
+            <a class="dishes" href="#burgerSection">Burger</a>
+            <a class="dishes" href="#supplymentSection">Beilagen</a>
+            <a class="dishes" href="#drinksSection">Getränke</a>
+            <a class="dishes" href="#soucenSection">Saucen</a>
+          </div>
+        </div>
+        <div class="supply top_bottom_padding site_padding">
+          <div class="burger_section dish_section" id="burgerSection"></div>
+          <h2>Burger</h2>
+          <div
+            class="supply_content top_bottom_padding"
+            id="burgerContent"
+          ></div>
+          <a class="dishes" href="#siteHead">zurück nach Oben</a>
+          <div
+            class="supplyment_section dish_section"
+            id="supplymentSection"
+          ></div>
+          <h2>Beilagen</h2>
+          <div
+            class="supply_content top_bottom_padding"
+            id="supplymentContent"
+          ></div>
+          <a class="dishes" href="#siteHead">zurück nach Oben</a>
+          <div class="drinks_section dish_section" id="drinksSection"></div>
+          <h2>Getränke</h2>
+          <div
+            class="supply_content top_bottom_padding"
+            id="drinksContent"
+          ></div>
+          <a class="dishes" href="#siteHead">zurück nach Oben</a>
+          <div class="souce_section dish_section" id="soucenSection"></div>
+          <h2>Saucen</h2>
+          <div
+            class="supply_content top_bottom_padding"
+            id="soucenContent"
+          ></div>
+          <a class="dishes" href="#siteHead">zurück nach Oben</a>
+        </div>
+        <button onclick="toggleRespBasket()" class="resp_basket_btn d_none">
+          Warenkorb anzeigen
+        </button>
+      </main>
+      <div class="basket" id="basket">
+        <div class="basket_content">
+          <h2 class="basket_headline top_bottom_padding">Warenkorb</h2>
+          <div class="basket_list" id="basketList"></div>
+          <div class="total_price">
+            <span id="subTotalPrice"></span>
+            <span>Lieferkosten: 5,00€</span>
+            <span id="totalPrice">Gesamtsumme: 0,00€</span>
+          </div>
+          <div class="to_order">
+            <button onclick="orderOverlayOn()" class="to_order_btn">
+              Bestellen
+            </button>
+          </div>
+        </div>
+      </div>
+      <section class="resp_basket_container d_none" id="respBasketContainer">
+        <div class="resp_basket" id="respBasket">
+          <div class="basket_content">
+            <h2 class="basket_headline top_bottom_padding">Warenkorb</h2>
+            <div class="basket_list" id="basketRespList"></div>
+            <div class="total_price">
+              <span id="respSubTotalPrice"></span>
+              <span>Lieferkosten: 5,00€</span>
+              <span id="respTotalPrice">Gesamtsumme: 0,00€</span>
+            </div>
+            <div class="to_order">
+              <button onclick="orderOverlayOn()" class="to_order_btn">Bestellen</button>
+            </div>
+            <div class="to_order">
+              <button onclick="toggleRespBasket()" class="to_order_btn">Warenkorb Schließen</button>
+            </div>
+          </div>
+        </div>
+      </section>  
+    </section>
+    <section class="footer">
+      <footer class="footer_content site_padding"></footer>
+    </section>
+  </body>
+  <script src="./scripts/db.js"></script>
+  <script src="./scripts/template.js"></script>
+  <script src="./script.js"></script>
+</html>

@@ -1,0 +1,12 @@
+.header, footer{
+    height: 72px;
+    background-color: orange;
+    display: flex;
+    align-items: center;
+}
+
+.header_logo{
+    display: flex;
+    align-self: flex-start;
+    height: 56px;
+}

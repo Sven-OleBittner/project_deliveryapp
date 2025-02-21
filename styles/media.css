@@ -1,0 +1,40 @@
+@media(min-width: 1025px) {
+  .resp_basket_container{
+    display: none;
+  }
+}
+
+
+
+
+
+@media (max-width: 1024px) {
+  .basket {
+    display: none;
+  }
+
+  .resp_basket_btn {
+    display: block;
+  }
+
+  .footer {
+    display: none;
+  }
+}
+
+
+
+@media (max-width: 768px) {}
+
+
+
+@media (max-width: 500px) {
+  .logo_icon {
+    width: 48px;
+    padding: 8px;
+  }
+
+  .logo_background {
+    top: 130px;
+  }
+}

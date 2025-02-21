@@ -1,0 +1,60 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body {
+  /* display: flex;
+    flex-direction: column; */
+  font-family: "Raleway";
+}
+
+.max_content {
+  max-width: 1920px;
+}
+
+.site_padding {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.top_bottom_padding {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: orange;
+}
+
+.btn {
+  height: 32px;
+  width: 32px;
+  background-color: orange;
+  border: 0;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+  border-radius: 16px;
+}
+
+.btn:hover {
+  background-color: rgb(187, 122, 1);
+}
+
+.d_none{
+  display: none;
+}
+
+.no_scroll {
+  overflow: hidden;
+}
