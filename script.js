@@ -10,15 +10,8 @@ function init() {
 function dishRender(arr, id) {
   let dishRef = document.getElementById(id);
   dishRef.innerHTML = "";
-  for (
-    let supplyIndex = 0;
-    supplyIndex < supply[`${arr}`].length;
-    supplyIndex++
-  ) {
-    let dishPrice = supply[`${arr}`][supplyIndex].price
-      .toFixed(2)
-      .replace(".", ",")
-      .concat("€");
+  for (let supplyIndex = 0;supplyIndex < supply[`${arr}`].length;supplyIndex++) {
+    let dishPrice = supply[`${arr}`][supplyIndex].price.toFixed(2).replace(".", ",").concat("€");
     dishRef.innerHTML += choseTemplate(arr, supplyIndex, dishPrice);
   }
 }
