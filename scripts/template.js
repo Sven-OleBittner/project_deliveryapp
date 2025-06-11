@@ -33,5 +33,3 @@ function getSingleTemplate(basketIndex,  dishPrice) {
                 </button>
               </div>`
 }
-
-// 
